@@ -41,3 +41,6 @@
   ```sh
   code --install-extension hollowtree.vue-snippets
   ```
+## [ Chrome 擴充套件 ]
+
+- 安裝 [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 擴充套件
