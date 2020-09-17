@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+body{
+    font-size: .9rem;
+    letter-spacing: .5px;
+    color: #4d4d4d;
+}
+
+hr{
+    margin: 1.5rem auto;
+}
+
+
+/* =====================================
+|                 註冊                  |
+=======================================*/
+
+/* logo*/
+
+h1 .tccfLOGO{
+    width: 350px;
+    margin: 2rem auto .5rem;
+}
+
+/* 驗證*/
+
+.wizard > .content > .body .form-control.is-valid,
+.wizard > .content > .body .was-validated .form-control:valid{
+    border-color: #28a745;
+}
+
+.wizard > .content > .body .form-control.is-invalid,
+.wizard > .content > .body .was-validated .form-control:invalid{
+    border-color: #dc3545;
+}
+
+
+/* step- 步驟圓圈 */
+.motion{
+    display: block;
+    margin: 4rem 0 2rem 0;
+}
+
+.motion ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    list-style: none;
+    color: #888;
+}
+
+.motion ul li{
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.motion span{
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    border: 5px solid #F4F5FA;
+    background: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -58px;
+    left: 50%;
+    margin-left: -24px;
+    text-align: center;
+    z-index: 2;
+}
+
+.step>.motion>ul>li:after{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background-color: #F4F5FA;
+    top: -36px;
+    width: 50%;
+    height: 5px;
+}
+
+.step>.motion>ul>li:first-child:after{
+    right: 0;
+}
+
+.step>.motion>ul>li:nth-child(2):after{
+    left: 0;
+}
+
+.motion li.done,.motion li.active{
+    color: #666ee8;
+}
+
+.motion li.done span,.motion li.active span{
+    border: 5px solid #666ee8;
+}
+
+.step>.motion>ul>li.active:nth-child(2):after,
+.step>.motion>ul>li.done:after{
+    background-color: #666ee8;
+}
+
+/* step- 步驟填寫 */
+
+.registered .card{
+    border-radius: 15px;
+}
+
+.registered .card>.card-body{
+    padding: 3rem 4rem;
+}
+
+.step .text-muted{
+    font-size: .9rem;
+}
+
+.step label,
+.step legend{
+    color: #4d4d4d;
+    margin-top: 1rem;
+    margin-bottom: 0.1em;
+}
+
+.btn-area{
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+
+/* email驗證頁 */
+.verification,
+.success{
+    padding: 4.5rem 0;
+}
+
+
+.verification h3{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.verification p.email{
+    color: #8D8D8D;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.verification .reciprocal{
+    color: #8D8D8D;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.verification .reciprocal .text-orage{
+    color: #f35742;
+}
+
+.verification .btn-resend{
+    color: #f35742;
+    border: 1px solid #f35742;
+    padding: .5rem 3rem;
+}
+
+/* 驗證成功頁 */
+.success i{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: #76e498;
+}
+
+.success p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #39c358;
+}
+
+
+/*=============================
+        LOGIN - 登入頁、忘記密碼
+==============================*/
+
+body.card-center {
+    height: 100%;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+html, body.card-center {
+    height: 100%;
+}
+
+.registered{
+    height: 100vh;
+    display: flex;
+}
+
+.registered .login,
+.registered .password{
+    margin: auto;
+    width: 367px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 367px;
+    height: 510px;
+    padding: 4rem 3rem;
+    margin: auto;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    position: relative;
+    background: #fff;
+}
+
+.form-signin h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin label{
+    margin-top: 10px;
+}
+
+
+.btn-signin,
+.btn-next{
+    margin: 40px auto 15px;
+    background:#f35742;
+    color: #ffffff;
+}
+
+
+.btn-signin:hover,
+.btn-next:hover{
+    background: #ea523e;
+    color: #ffffff;
+}
+
+.btn-signin-outline{
+    border:1px solid #eb503b;
+    color: #eb503b;
+}
+
+.btn-signin-outline:hover{
+    background:#f35742;
+    color: #ffffff;
+}
+
+.forgot-register{
+    margin-top: 18px;
+    text-align: right;
+}
+
+.forgot-register a{
+    text-decoration: underline;
+    color: #4d4d4d;
+}
+
+.forgot-register a:first-child{
+    float: left;
+}
+
+.password .verification{
+    padding: 0;
+}
+
+.password .verification h3 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    line-height: 37px;
+}
+
+.password .verification i{
+    font-size: 5rem;
+    color: #c7c7c7;
+    margin-bottom: 2rem;
+}
+
+/*logo*/
+.login .ticcalogo {
+    width: 235px;
+    margin-top: 2.4rem;
+}

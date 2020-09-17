@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+h2.main-title {
+    font-size: 1.3rem;
+    margin-top: .5rem;
+}
+.dashboard-card.row {
+    width: auto;
+}
+.dashboard-card .card {
+    border: 0;
+    padding: 1rem 1.5rem;
+    text-align: right;
+    position: relative;
+    color: #333333;
+    transition: box-shadow .1s ease-in;
+    margin-bottom: .5rem;
+}
+.dashboard-card .card:hover {
+    text-decoration: none;
+    box-shadow: 0px 3px 6px rgba(210, 210, 210, .5);
+}
+.dashboard-card .card i {
+    position: absolute;
+    left: 1.5rem;
+    top: calc(50% - 11px);
+    font-size: 1.375rem;
+}
+.dashboard-card .card .counter {
+    font-size: 1.75rem;
+    font-family: 'Roboto', sans-serif;
+}

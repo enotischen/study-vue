@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+.post-content {
+    font-size: 1rem;
+    color: #2d2d2d;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.post-content .foreword {
+    border : 3px solid;
+    margin: 30px 0;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+}
+
+.post-content h2 , .post-content h3, .post-content h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+.post-content h2 {
+    font-size: 1.5rem;
+
+}
+.post-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.post-content h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: italic;
+}
+.post-content p {
+    color: #555;
+}
+.post-content ol, .post-content ul {
+    margin: 1rem 0;
+}
+.post-content ol li, .post-content ul li {
+    margin-bottom: 1rem;
+    color: #555;
+}
+.post-content .italic {
+    font-style: italic;
+}
+.post-content .line {
+    text-decoration: underline;
+}
+.post-content .highlight {
+    background-color: #ffe888;
+}
+.post-content .remark {
+    color: #799c48;
+    font-size: 0.875rem;
+    margin: 0 2px;
+}
+.post-content .remark-content {
+    font-size: 0.875rem;
+    padding: 25px;
+    background: #eee;
+    margin: 15px 0 20px;
+    display: none;
+}
+.post-content  .remark-content span {
+    font-weight: bold;
+    color: #799c48;
+}
+.post-content blockquote {
+    padding: 25px 45px;
+    margin: 25px 0;
+    position: relative;
+    font-size: 1.25rem;
+}
+.post-content blockquote .from{
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+.post-content blockquote::before,  .post-content blockquote::after {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    margin-right: 5px;
+    color: #ddd;
+    position: absolute;
+    font-size: 1.75rem;
+}
+.post-content blockquote::before {
+       content: '\f10d';
+       top: 5px;
+       left: 5px;
+}
+.post-content blockquote::after {
+    content: '\f10e';
+    right: 5px;
+    bottom: 5px;
+}
+.post-content p.tip {
+    border-left: #00afc8 solid 3px;
+    padding: 0 10px;
+    font-style: italic;
+    font-size: .9rem;
+}
+.post-content img {
+    max-width: 100%;
+    margin: 30px auto;
+    display: block;
+    height: auto;
+}
+.post-content figure {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.post-content figcaption {
+    text-align: left;
+    margin: 3px 0 30px 0;
+    font-size: .85rem;
+    color: #6c757d;
+    letter-spacing: .5px;
+    text-align: center;
+}
+.post-content figure img {
+    margin-bottom: 0;
+}
+.post-content img.img-icon {
+    margin: 0 2px;
+    display: inline;
+}
+
+.post-content iframe{
+    max-width: 100%;
+    width: 100% !important;
+}
+.post-content  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    margin: 25px 0;
+    text-align: left;
+}
+.post-content .videoWrapper iframe {
+    position: absolute;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+.post-content table caption {
+    font-size: .85rem;
+    letter-spacing: .5px;
+}
+/* code modal */
+.modal-code .modal-content {
+    padding: 38px;
+}
+.modal-code .modal-header {
+    justify-content: center;
+    border-bottom: 0;
+}
+
+.modal-code .modal-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.modal-code .modal-content {
+    position: relative;
+}
+.modal-code .modal-content .close {
+    font-weight: normal;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+.modal-code .modal-dialog {
+    max-width: 700px;
+}
+.modal-code .code-section {
+    padding: 1rem;
+    background: #eee;
+    margin-bottom: 1rem;
+}

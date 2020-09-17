@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+body{
+    font-size: .95rem;
+    letter-spacing: .5px;
+    color: #4d4d4d;
+}
+
+hr{
+    margin: 1.5rem auto;
+}
+
+.float-r{
+    float: right;
+}
+
+.btn-area .btn{
+    padding: .5rem 4rem;
+    margin: 1rem;
+}
+
+.btn.btn-system{
+    background: #fff;
+    border:1px solid #f35742;
+    color: #f35742;
+}
+
+.btn.btn-system:hover{
+    background: #f35742;
+    border:1px solid #f35742;
+    color: #fff;
+    transition: .2s;
+}
+
+.btn.btn-add{
+    background: #f35742;
+    border:1px solid #f35742;
+    color: #fff;
+}
+
+
+.btn.btn-add:hover{
+    background: #dd4a36;
+    border:1px solid #dd4a36;
+    color: #fff;
+    text-decoration: unset;
+    transition: .2s;
+}
+
+
+/* =====================================
+|                 內頁                  
+=======================================*/
+
+/*側欄*/
+.cp .side{
+    padding: 1.5rem;
+}
+
+.cp .card{
+    margin-bottom: 2rem;
+}
+
+.cp .card.side,
+.cp .card{
+    border-radius: 10px;
+}
+
+.cp .card.side a{
+    color: #53545a;
+}
+
+.cp .card.side a:hover{
+    background: rgb(240 64 39 / 7%);
+    border-radius: 10px;
+    transition: all .2s 0s ease-in-out;
+}
+
+.cp .card.side a.active {
+    color: #f04027;
+    position: relative;
+}
+
+.cp .card.side a.active:before {
+    content: '';
+    position: absolute;
+    background-color: #f04027;
+    width: 7px;
+    height: 10px;
+    border-radius: 0 15px 15px 0;
+    left: -25px;
+    top: calc( 50% - 7px );
+}
+
+/*列表*/
+
+.btn-add{
+    position: absolute;
+    right: 4rem;
+    top: 1.5rem;
+}
+
+.search-area{
+    margin-bottom: 2.5rem;
+}
+
+.cp .table thead{
+    background: rgb(241 243 255);
+    border: 0;
+}
+
+.cp .table thead th {
+    border-bottom: 0px solid #f35742;
+}
+
+.cp .alert-secondary {
+    color: #383d41;
+    background-color: #f1f1f1;
+    border: 0;
+}
+
+.cp .btn {
+    margin: 0 .4rem;
+}
+
+/*填寫*/
+
+.cp .card .card-body{
+    padding: 2rem 3.5rem;
+    position: relative;
+}
+
+.cp .card .form-title{
+    font-size: 1.5rem;
+    letter-spacing: 6px;
+    margin-bottom: 1.7rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.cp .card .form-subtitle{
+    font-size: 1.3rem;
+    color: #f04027;
+    margin: 1.5rem 0;
+    padding-left: 1.3rem;
+    position: relative;
+}
+
+.cp .card .form-subtitle:before {
+    content: '';
+    position: absolute;
+    background-color: #f04027;
+    width: 10px;
+    height: 10px;
+    left: 0px;
+    top: calc( 50% - 7px );
+}
+
+.cp strong{
+    letter-spacing: 2px;
+}
+
+.cp .en{
+    margin-left: .2rem;
+}
+
+.cp .badge {
+    margin-top: 3px;
+    padding: .4em .5em;
+    font-size: 85%;
+    font-weight: normal;
+}
+
+.cp .badge-warning {
+    color: #563300;
+    background-color: #fff2ca;
+}
+
+/*歡迎圖*/
+.cp .welcome img{
+    width: 100%;
+}
+
+
+
+
+
+/* =====================================
+|                 RWD                  
+=======================================*/
+
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1340px;
+    }
+}
+
+@media (min-width: 991.98px){
+    .cp .table th,
+    .cp .table td{
+        text-align: center;
+    }
+}

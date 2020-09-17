@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/*  404/500 Page  */
+.verticalOuter {
+  position: relative;
+  height: 100vh;
+}
+.verticalInner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+.verticalInner h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.verticalInner p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
